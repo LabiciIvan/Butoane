@@ -1,0 +1,22 @@
+#gameWindow {
+  margin:auto;
+  background-color: rgb(118, 247, 219);
+  width: 250px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right:10px ;
+  padding-right: 10px;
+  box-shadow: rgb(82, 161, 135) 5px 5px 5px ;
+  border-radius: 10px;
+}
+
+#allButtons {
+  margin: 5px ;
+  background-color:rgb(69, 214, 190);
+  border-radius: 5px;
+  border-color: rgb(68, 184, 145);
+}
+
+#allButtons:hover {
+  background-color: rgb(62, 192, 170);;
+}
