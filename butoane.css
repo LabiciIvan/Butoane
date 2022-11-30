@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+
+* {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+}
+
+body {
+      width: 100%;
+      height: 100vh;
+      background-color: #ef911f13
+}
+
+.butoane-section {
+      display: grid;
+      width: 100%;
+      height: 100%;
+      grid-template-columns: repeat(9, 1fr);
+      grid-template-rows: repeat(9, 1fr);
+}
+
+.start-section {
+      display: grid;
+      /* display: none; */
+      grid-area: 3/3/8/8;
+      grid-template-columns: repeat(7, 1fr);
+      grid-template-rows: repeat(7, 1fr);
+      border: 1px solid rgb(160, 153, 153);
+      border-radius: 5px;
+      box-shadow: 1px 10px 13px 2px #5755552e;
+      background-color: #ef911f13;
+}
+
+.game-input {
+      grid-area: 3/3/4/6;
+      text-align: center;
+      outline: none;
+      font-size: 20px;
+      font-family: 'Poppins', sans-serif;
+}
+
+.errors {
+      grid-area: 4/3/5/6;
+      margin: 1rem 0 1rem 0;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+}
+
+.error {
+      color: #e81c0d;
+      font-size: 13px;
+      justify-self: center;
+      font-family: 'Poppins', sans-serif;
+}
+
+.start-btn {
+      grid-area: 5/3/6/6;
+      background-color: #459745;
+      color: white;
+      font-size: 20px;
+      border: none;
+      border-radius: 5px;
+      font-family: 'Poppins', sans-serif;
+}
+
+.play-section {
+      display: none;
+      /* display: grid; */
+      grid-area: 1/1/10/10;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(8, 1fr);
+}
+
+.restart-btn {
+      grid-area: 1/8/2/9;
+      height: 50%;
+      border: 1px solid #d09d5f;
+      background-color:  #eecfaa;
+      /* opacity: 0; */
+}
+
+.bi.bi-arrow-repeat {
+      color: rgb(207, 104, 40);
+      font-size: 20px;
+}
+
+.game-health {
+      display: grid;
+      grid-area: 1/2/2/5;
+      padding-bottom: 0.7rem;
+      grid-template-columns: repeat(10, 1fr);
+      align-items: flex-end;
+}
+
+.bi.bi-heart-fill {
+      color: #f12020;
+      font-size: 20px;
+}
+
+.game-map {
+      display: grid;
+      grid-area: 2/2/8/8;
+      gap: 5px;
+      grid-template-columns: repeat(10, 1fr);
+      grid-template-rows: repeat(8, 1fr);
+
+}
+
+.guess-btn {
+      background-color: beige;
+      border: 2px solid #eecfaa;
+      color: rgb(207, 104, 40);
+      cursor: pointer;
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+}
+
+.input-error {
+      outline: 1px solid red;
+}
+
+.guess-btn.clicked {
+      background-color: #cccca4;
+      border: 2px solid #d1a56f;
+
+}
+
+.guess-btn.winner {
+      background-color: #f4f488;
+      border: 2px solid #e7a95f;
+      font-size: 20px;
+}
+
+.game-map:hover .restart-btn {
+      opacity: 0;
+}
+
+.guess-btn:hover {
+      background-color: #e7e7c3;
+      border: 2px solid #d1a56f;
+
+}
+
+.restart-btn:hover {
+      opacity: 1;
+      cursor: pointer;
+      background-color:  #eabe88;
+      transition: 0.2s ease;
+}
+
+.start-btn:hover {
+      background-color: green;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in;
+}
+
+.guess-btn.clicked:hover {
+      background-color: #cccca4;
+}
