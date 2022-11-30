@@ -5,20 +5,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lucky one</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <link rel="stylesheet" href="./butoane.css">
 </head>
 <body>
-  <div id="gameWindow">
-    <div id="UserStatusHolder">
-      <h5 id="userStatus">INSERT NUMBER AND CLICK 'START'</h5>
+  <div class="butoane-section">
+
+    <div class="start-section">
+      <input type="text" class="game-input" placeholder="Number between  2 - 80">
+      <div class="errors">
+        <strong class="error"></strong>
+      </div>
+      <button class="start-btn">START</button>
     </div>
-    <div id="userGameStart">
-      <form>
-        <input id="userInput" type="text" placeholder="Insert a number but not '0'">
-        <button onclick="createButtons()">START</button>
-      </form>
+
+    <div class="play-section">
+      <button class="restart-btn"><i class="bi bi-arrow-repeat"></i></button>
+      <div class="game-health"></div>
+      <div class="game-map"></div>
     </div>
+
   </div>
+  <script src="./butoane.js"></script>
 </body>
 </html>
